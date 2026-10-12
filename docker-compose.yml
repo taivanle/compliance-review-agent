@@ -1,0 +1,48 @@
+# Full local stack, all free: the agent, Postgres for checkpoints, and Ollama
+# serving an open-weights model on your own machine.
+#
+#   docker compose up --build
+#
+# First start downloads the model (~4.7 GB for qwen2.5:7b). On a laptop
+# without a GPU, set OLLAMA_MODEL=qwen2.5:3b in .env for faster responses.
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: reviews
+      POSTGRES_PASSWORD: reviews
+      POSTGRES_DB: reviews
+    ports: ["5432:5432"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U reviews"]
+      interval: 5s
+      retries: 10
+    volumes: [pgdata:/var/lib/postgresql/data]
+
+  ollama:
+    image: ollama/ollama:latest
+    ports: ["11434:11434"]
+    volumes: [ollama:/root/.ollama]   # model cache survives restarts
+    environment:
+      MODEL: ${OLLAMA_MODEL:-qwen2.5:7b}
+    entrypoint: ["/bin/sh", "-c", "ollama serve & sleep 3 && ollama pull $$MODEL && wait"]
+    healthcheck:
+      test: ["CMD-SHELL", "ollama list | grep -q \"$$MODEL\""]
+      interval: 10s
+      retries: 60
+      start_period: 30s
+
+  api:
+    build: .
+    ports: ["8000:8000"]
+    env_file: [.env]
+    environment:
+      DATABASE_URL: postgresql://reviews:reviews@db:5432/reviews
+      OLLAMA_BASE_URL: http://ollama:11434
+    depends_on:
+      db: { condition: service_healthy }
+      ollama: { condition: service_healthy }
+
+volumes:
+  pgdata:
+  ollama:

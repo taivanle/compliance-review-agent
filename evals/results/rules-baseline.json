@@ -1,0 +1,249 @@
+{
+  "summary": {
+    "analyzer": "rules",
+    "documents": 8,
+    "labelled_clauses": 32,
+    "risk_accuracy": 0.875,
+    "high_recall": 0.75,
+    "high_precision": 0.857,
+    "total_cost_usd": 0.0,
+    "cost_per_doc_usd": 0.0,
+    "mean_latency_ms": 0.26,
+    "p95_latency_ms": 1.0,
+    "total_tokens": 0
+  },
+  "results": [
+    {
+      "doc_id": "saas-msa-01",
+      "thread_id": "eval-saas-msa-01-f882136e",
+      "rows": [
+        {
+          "contains": "unlimited liability",
+          "expected": "high",
+          "predicted": "high"
+        },
+        {
+          "contains": "outside the UK",
+          "expected": "high",
+          "predicted": "high"
+        },
+        {
+          "contains": "within 30 days",
+          "expected": "low",
+          "predicted": "low"
+        },
+        {
+          "contains": "laws of England",
+          "expected": "low",
+          "predicted": "low"
+        }
+      ],
+      "cost_usd": 0.0,
+      "latency_ms": 1.0,
+      "tokens": 0
+    },
+    {
+      "doc_id": "data-processing-02",
+      "thread_id": "eval-data-processing-02-d8e00cf4",
+      "rows": [
+        {
+          "contains": "documented instructions",
+          "expected": "low",
+          "predicted": "low"
+        },
+        {
+          "contains": "International Data Transfer",
+          "expected": "low",
+          "predicted": "low"
+        },
+        {
+          "contains": "72 hours",
+          "expected": "low",
+          "predicted": "low"
+        },
+        {
+          "contains": "audit",
+          "expected": "low",
+          "predicted": "low"
+        }
+      ],
+      "cost_usd": 0.0,
+      "latency_ms": 0.2,
+      "tokens": 0
+    },
+    {
+      "doc_id": "vendor-terms-03",
+      "thread_id": "eval-vendor-terms-03-5c80b789",
+      "rows": [
+        {
+          "contains": "without notice",
+          "expected": "high",
+          "predicted": "high"
+        },
+        {
+          "contains": "automatically renew",
+          "expected": "medium",
+          "predicted": "medium"
+        },
+        {
+          "contains": "sole discretion",
+          "expected": "medium",
+          "predicted": "medium"
+        },
+        {
+          "contains": "confidential information",
+          "expected": "low",
+          "predicted": "low"
+        }
+      ],
+      "cost_usd": 0.0,
+      "latency_ms": 0.16999999999999998,
+      "tokens": 0
+    },
+    {
+      "doc_id": "consulting-04",
+      "thread_id": "eval-consulting-04-e3e24aec",
+      "rows": [
+        {
+          "contains": "120 days",
+          "expected": "medium",
+          "predicted": "medium"
+        },
+        {
+          "contains": "terminate on 30 days",
+          "expected": "low",
+          "predicted": "low"
+        },
+        {
+          "contains": "capped at the fees",
+          "expected": "low",
+          "predicted": "low"
+        },
+        {
+          "contains": "courts of England",
+          "expected": "low",
+          "predicted": "low"
+        }
+      ],
+      "cost_usd": 0.0,
+      "latency_ms": 0.18,
+      "tokens": 0
+    },
+    {
+      "doc_id": "cloud-hosting-05",
+      "thread_id": "eval-cloud-hosting-05-90314256",
+      "rows": [
+        {
+          "contains": "shall not be limited",
+          "expected": "high",
+          "predicted": "high"
+        },
+        {
+          "contains": "outside the EEA",
+          "expected": "high",
+          "predicted": "high"
+        },
+        {
+          "contains": "indemnifies the Provider",
+          "expected": "high",
+          "predicted": "low"
+        },
+        {
+          "contains": "sole remedy",
+          "expected": "medium",
+          "predicted": "low"
+        }
+      ],
+      "cost_usd": 0.0,
+      "latency_ms": 0.12,
+      "tokens": 0
+    },
+    {
+      "doc_id": "licence-06",
+      "thread_id": "eval-licence-06-dcda43a9",
+      "rows": [
+        {
+          "contains": "non-exclusive",
+          "expected": "low",
+          "predicted": "low"
+        },
+        {
+          "contains": "without prior notice",
+          "expected": "high",
+          "predicted": "high"
+        },
+        {
+          "contains": "annually in advance",
+          "expected": "low",
+          "predicted": "low"
+        },
+        {
+          "contains": "reverse engineer",
+          "expected": "low",
+          "predicted": "low"
+        }
+      ],
+      "cost_usd": 0.0,
+      "latency_ms": 0.14,
+      "tokens": 0
+    },
+    {
+      "doc_id": "outsourcing-07",
+      "thread_id": "eval-outsourcing-07-8b084a52",
+      "rows": [
+        {
+          "contains": "FCA rules",
+          "expected": "low",
+          "predicted": "low"
+        },
+        {
+          "contains": "subcontract",
+          "expected": "high",
+          "predicted": "medium"
+        },
+        {
+          "contains": "95 days",
+          "expected": "medium",
+          "predicted": "medium"
+        },
+        {
+          "contains": "transition assistance",
+          "expected": "low",
+          "predicted": "low"
+        }
+      ],
+      "cost_usd": 0.0,
+      "latency_ms": 0.14,
+      "tokens": 0
+    },
+    {
+      "doc_id": "nda-08",
+      "thread_id": "eval-nda-08-e0cfc87a",
+      "rows": [
+        {
+          "contains": "public domain",
+          "expected": "low",
+          "predicted": "low"
+        },
+        {
+          "contains": "survive for 5 years",
+          "expected": "low",
+          "predicted": "low"
+        },
+        {
+          "contains": "affiliates outside",
+          "expected": "medium",
+          "predicted": "high"
+        },
+        {
+          "contains": "injunctive relief",
+          "expected": "low",
+          "predicted": "low"
+        }
+      ],
+      "cost_usd": 0.0,
+      "latency_ms": 0.15,
+      "tokens": 0
+    }
+  ]
+}

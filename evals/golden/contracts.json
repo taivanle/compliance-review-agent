@@ -1,0 +1,82 @@
+[
+  {
+    "doc_id": "saas-msa-01",
+    "document_text": "1. The Supplier shall have unlimited liability for any breach of this Agreement.\n\n2. The Supplier may transfer personal data to sub-processors outside the UK.\n\n3. Invoices are payable within 30 days of receipt.\n\n4. This Agreement is governed by the laws of England and Wales.",
+    "expected": [
+      {"contains": "unlimited liability", "risk": "high"},
+      {"contains": "outside the UK", "risk": "high"},
+      {"contains": "within 30 days", "risk": "low"},
+      {"contains": "laws of England", "risk": "low"}
+    ]
+  },
+  {
+    "doc_id": "data-processing-02",
+    "document_text": "1. The Processor shall process personal data only on documented instructions from the Controller.\n\n2. Personal data may be transferred outside the UK subject to the UK International Data Transfer Agreement as a safeguard.\n\n3. The Processor shall notify the Controller of a personal data breach within 72 hours.\n\n4. The Controller may audit the Processor once per year on 30 days' notice.",
+    "expected": [
+      {"contains": "documented instructions", "risk": "low"},
+      {"contains": "International Data Transfer", "risk": "low"},
+      {"contains": "72 hours", "risk": "low"},
+      {"contains": "audit", "risk": "low"}
+    ]
+  },
+  {
+    "doc_id": "vendor-terms-03",
+    "document_text": "1. The Vendor may suspend the Services without notice if it suspects misuse.\n\n2. This Agreement shall automatically renew for successive 12 month terms.\n\n3. Fees may be varied at the Vendor's sole discretion.\n\n4. Each party shall keep the other's confidential information secret.",
+    "expected": [
+      {"contains": "without notice", "risk": "high"},
+      {"contains": "automatically renew", "risk": "medium"},
+      {"contains": "sole discretion", "risk": "medium"},
+      {"contains": "confidential information", "risk": "low"}
+    ]
+  },
+  {
+    "doc_id": "consulting-04",
+    "document_text": "1. Payment is due within 120 days of invoice.\n\n2. Either party may terminate on 30 days' written notice.\n\n3. The Consultant's total liability is capped at the fees paid in the preceding 12 months.\n\n4. Any dispute shall be resolved by the courts of England.",
+    "expected": [
+      {"contains": "120 days", "risk": "medium"},
+      {"contains": "terminate on 30 days", "risk": "low"},
+      {"contains": "capped at the fees", "risk": "low"},
+      {"contains": "courts of England", "risk": "low"}
+    ]
+  },
+  {
+    "doc_id": "cloud-hosting-05",
+    "document_text": "1. The Provider's liability shall not be limited in respect of data loss caused by the Customer.\n\n2. The Provider may relocate hosting to data centres outside the EEA at any time.\n\n3. The Customer indemnifies the Provider against all third party claims of any kind.\n\n4. Service credits are the Customer's sole remedy for downtime.",
+    "expected": [
+      {"contains": "shall not be limited", "risk": "high"},
+      {"contains": "outside the EEA", "risk": "high"},
+      {"contains": "indemnifies the Provider", "risk": "high"},
+      {"contains": "sole remedy", "risk": "medium"}
+    ]
+  },
+  {
+    "doc_id": "licence-06",
+    "document_text": "1. The Licensor grants a non-exclusive, non-transferable licence for internal use.\n\n2. The Licensor may terminate this licence without prior notice for any reason.\n\n3. Licence fees are payable annually in advance.\n\n4. The Licensee shall not reverse engineer the Software.",
+    "expected": [
+      {"contains": "non-exclusive", "risk": "low"},
+      {"contains": "without prior notice", "risk": "high"},
+      {"contains": "annually in advance", "risk": "low"},
+      {"contains": "reverse engineer", "risk": "low"}
+    ]
+  },
+  {
+    "doc_id": "outsourcing-07",
+    "document_text": "1. The Supplier shall comply with all applicable FCA rules relevant to the Services.\n\n2. The Supplier may subcontract any part of the Services at its sole and absolute discretion.\n\n3. The Customer shall pay invoices within 95 days.\n\n4. On exit the Supplier shall provide reasonable transition assistance for 6 months.",
+    "expected": [
+      {"contains": "FCA rules", "risk": "low"},
+      {"contains": "subcontract", "risk": "high"},
+      {"contains": "95 days", "risk": "medium"},
+      {"contains": "transition assistance", "risk": "low"}
+    ]
+  },
+  {
+    "doc_id": "nda-08",
+    "document_text": "1. Confidential Information excludes information already in the public domain.\n\n2. Obligations of confidentiality survive for 5 years after termination.\n\n3. The Recipient may disclose Confidential Information to its affiliates outside the United Kingdom.\n\n4. Damages may not be an adequate remedy and injunctive relief is available.",
+    "expected": [
+      {"contains": "public domain", "risk": "low"},
+      {"contains": "survive for 5 years", "risk": "low"},
+      {"contains": "affiliates outside", "risk": "medium"},
+      {"contains": "injunctive relief", "risk": "low"}
+    ]
+  }
+]

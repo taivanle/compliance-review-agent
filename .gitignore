@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+.pytest_cache/
+.ruff_cache/
+evals/results/*.json
+!evals/results/rules-baseline.json
+infra/terraform/.terraform/
+infra/terraform/*.tfstate*
+infra/terraform/*.tfvars

@@ -1,0 +1,11 @@
+langgraph==1.2.14
+langgraph-checkpoint-postgres==3.1.2
+langchain==1.4.4
+langchain-core==1.6.10
+langchain-ollama==1.1.0
+langfuse==4.17.0
+fastapi==0.143.0
+uvicorn[standard]==0.53.0
+pydantic==2.13.5
+psycopg[binary]==3.3.6
+psycopg-pool==3.3.3
